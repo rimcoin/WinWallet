@@ -15,7 +15,7 @@ balance=subprocess.check_output(("curl "+node+"bal*"+us+" -s").split(" "))
 
 print("You currently have "+balance.decode("latin1")+" RC. ")
 
-print("That is $"+(float(balance.decode("latin1"))*float(subprocess.check_output(("curl https://pastebin.com/raw/bMW33BUC -s").split(" "))))
+print("That is $"+(float(balance.decode("latin1"))*float(subprocess.check_output(("curl https://pastebin.com/raw/bMW33BUC -s").split(" ")))))
 
 print("Type 'help' (w/o quotes) for commands")
 
