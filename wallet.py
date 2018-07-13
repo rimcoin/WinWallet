@@ -8,7 +8,7 @@ for custom nodes - default is genesis node. """)
 node="67.241.245.218:8080/"
 us=input("input Rimcoin wallet address (put n if you don't have one) - ")
 if us=="n":
-    cr=input("enter desired wallet address")
+    cr=input("enter desired wallet address: ")
     os.system("(curl "+node+"create*"+cr+" -s)>"+cr+"_wallet.rim")
     us=cr
 balance=subprocess.check_output(("curl "+node+"bal*"+us+" -s").split(" "))
